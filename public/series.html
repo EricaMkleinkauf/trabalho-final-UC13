@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serie</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <h1>Minhas Séries</h1>
+
+  <button id="Sair" onclick="logout()">Sair</button>
+
+  <form id="cadastro-serie">
+    <input type="text" id="titulo" placeholder="Título da Série" required>
+    <textarea id="sinopse" placeholder="Sinopse" required></textarea>
+    <input type="text" id="genero" placeholder="Gênero" required>
+    <input type="number" id="temporada" placeholder="Temporada" required>
+    <input type="number" id="episodio" placeholder="Episódio Atual" required>
+    <input type="number" id="nota" placeholder="Nota (0 a 10)" step="0.1" min="0" max="10" required>
+    <button type="submit">Salvar Série</button>
+  </form>
+
+  <ul id="lista-series"></ul>
+
+  <script src="js/series.js"></script>
+</body>
+</html>
